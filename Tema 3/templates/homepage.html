@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Map</title>
+
+     <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../static/homepage/homepage.css">
+    <link rel="stylesheet" href="../static/fonts/product_sans.css">
+    <link rel="stylesheet" href="../static/dependencies/materialize.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light-border.css" />
+
+</head>
+<body>
+
+    <!--Toolbar-->
+    <nav>
+        <div class="nav-wrapper z-depth-1 white">
+            <i class="material-icons black-text nav-icon sidebar-open" data-target="slide-out">menu</i>
+            <a href="#" class="logo left">Social </a>
+            <a href="#" class="logo-1 left">Map</a>
+            <!--Search Field-->
+            <form onsubmit="return false;">
+                <div class="input-field search-bar">
+                  <input id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons search-icon">search</i></label>
+                    <i class="material-icons">close</i>
+<!--                    <span class="seach-text">Search</span>-->
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!--Sidenav-->
+    <div id="slide-out" class="sidenav">
+        <!--Title Area-->
+        <div class="sidenav-title">
+            <h5 id="zone-title" class="zone-title">Awsome Title</h5>
+            <i class="material-icons more_options">more_horiz</i>
+        </div>
+        <!--Message area-->
+        <div class="message-warper">
+            <input type="text" class="message" placeholder="Write a message... ">
+            <i class="material-icons attach">add_circle</i>
+        </div>
+        <!--List area-->
+        <div id="messages">
+            <ul class="list"></ul>
+        </div>
+    </div>
+
+    <!--Map-->
+     <div class="content-warper">
+            <div id="map"></div>
+     </div>
+
+    <!--Add Button-->
+    <template id="add_tooltip">
+        <p class="add_image">Add Image</p>
+    </template>
+
+    <!-- JavaScript -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNVaLb61oevy-VOYrdQEq50vC7lrIH0sw&libraries=places" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script src="../static/homepage/homepage.js"></script>
+
+
+</body>
+</html>

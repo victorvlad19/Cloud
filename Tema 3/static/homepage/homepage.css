@@ -1,0 +1,222 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------*/
+/*Toolbar*/
+/*----------*/
+.nav-wrapper{
+    z-index: 10 !important;
+}
+
+nav{
+    z-index: 10 !important;
+}
+
+.nav-icon{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.logo{
+    font-family: 'Product Sans Regular';
+    font-size: 26px !important;
+    color: black !important;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 70px;
+}
+
+.logo-1{
+    font-family: 'Product Sans Regular';
+    font-size: 26px !important;
+    color: #424242 !important;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 142px;
+}
+
+.content-warper{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 64px);
+    z-index: 0;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: #424242;
+    position: relative;
+    top: 70px;
+}
+
+.search-bar{
+    background-color: #f5f5f5;
+    width: 600px;
+    position: absolute !important;
+    top: 0 !important;
+    left: 230px;
+}
+
+#search{
+    background-color: #f5f5f5;
+    position: absolute;
+}
+
+.search-icon{
+    color: #424242 !important;
+}
+
+.seach-text{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    color: black;
+    cursor: pointer;
+}
+
+/*----------*/
+/*----MAP---*/
+/*----------*/
+#map {
+    height: 100%;
+}
+
+.sidenav-title{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+/*-----------*/
+/*MESSAGE BOX*/
+/*-----------*/
+.message-warper{
+    width: 100%;
+    height: 65px;
+    background: #fff;
+    bottom: 1px;
+    margin-bottom: 0px;
+    position: fixed;
+    z-index: 100;
+}
+
+.message{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    width: 280px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px !important;
+    color: black !important;
+    background: Transparent !important;
+    margin-top: 10px !important;
+}
+
+.attach{
+    position: absolute;
+    left: 250px;
+    top: 18px;
+    color: #424242;
+    cursor: pointer;
+}
+
+#messages{
+    margin-left: 14px;
+    margin-right: 14px;
+    height: calc( 100% - 115px );
+    overflow: auto;
+}
+
+input{
+    padding-right: 45px !important;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #424242;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #424242;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #424242;
+}
+
+.message_body{
+    float: left;
+    clear: left;
+    color: black;
+    padding-right: 40px;
+    width: 200px !important;
+    margin: 0;
+    margin-top: -10px;
+    position: relative !important;
+    display:inline-block !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.timestamp{
+    float: left;
+    clear: left;
+    margin-top: -26px;
+    color: #4b4b4b !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.mess-content{
+    background-color: black;
+}
+
+.more_options{
+    color: rgba(140, 140, 140, 0.87);
+    cursor: pointer;
+}
+
+.add_image{
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.image{
+    max-width: 80px;
+    max-height: 100px;
+    position: relative;
+    display: inline-block;
+    left: -65px;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+}
